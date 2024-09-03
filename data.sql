@@ -33,6 +33,7 @@ INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupI
 ('Looking for teammates for the basketball game.', 8, TRUE, FALSE, 7),
 ('Debate topic: Is technology harmful or beneficial?', 9, TRUE, FALSE, 8),
 ('My Book recommendation: "To Kill a Mockingbird".', 10, TRUE, FALSE, 9);
+('My experience with online classes.', 4, TRUE, FALSE, NULL);
 
 INSERT INTO Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) VALUES
 (1, 2, TRUE),
