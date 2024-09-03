@@ -34,6 +34,8 @@ INSERT INTO Posts (PostDescription, PostedBy, IsPublic, IsOnlyForFriends, GroupI
 ('Debate topic: Is technology harmful or beneficial?', 9, TRUE, FALSE, 8),
 ('My Book recommendation: "To Kill a Mockingbird".', 10, TRUE, FALSE, 9);
 ('My experience with online classes.', 4, TRUE, FALSE, NULL);
+('Study materials for Electrical Engineering exam', 3, TRUE, FALSE, 2),
+('Discussion on latest tech trends in Computer Science', 3, TRUE, FALSE, 2);
 
 INSERT INTO Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) VALUES
 (1, 2, TRUE),
@@ -46,6 +48,15 @@ INSERT INTO Friends (FriendWhoAdded, FriendBeingAdded, IsAccepted) VALUES
 (8, 9, TRUE),
 (9, 10, TRUE),
 (10, 6, TRUE);
+(2, 4, TRUE),
+(2, 5, TRUE),
+(6, 2, TRUE),
+(7, 2, TRUE),
+(8, 2, TRUE),
+(9, 2, TRUE);
+(1, 6, FALSE),
+(1, 7, TRUE),
+(1, 8, FALSE);
 
 INSERT INTO GroupMembershipRequests (GroupID, GroupMemberUserID, IsGroupMemberShipAccepted) VALUES
 (2, 1, TRUE),
@@ -58,4 +69,6 @@ INSERT INTO GroupMembershipRequests (GroupID, GroupMemberUserID, IsGroupMemberSh
 (8, 4, TRUE),
 (9, 5, TRUE),
 (10, 1, TRUE);
-
+(11, 2, FALSE);
+(2, 4, FALSE),
+(2, 5, FALSE);
